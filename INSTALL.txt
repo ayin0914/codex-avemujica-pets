@@ -1,0 +1,33 @@
+祥子与睦 · Codex 桌面宠物 v1.0.0
+
+需要支持本地自定义宠物的 Codex 桌面版。
+
+Windows
+1. 解压 ZIP，保留角色文件夹名称。
+2. 在文件资源管理器中打开 %USERPROFILE%\.codex\pets，不存在时创建目录。
+   如果已自定义 CODEX_HOME，则使用 %CODEX_HOME%\pets。
+3. 将包内角色文件夹复制进去；已有同名文件夹时，请先备份旧版。
+4. 打开 Codex 设置 → 宠物（Pets），刷新并选择“丰川祥子”或“若叶睦”。
+   若未显示，重新打开设置或重启 Codex。
+
+macOS
+1. 解压 ZIP，保留角色文件夹名称。
+2. 在 Finder 中按 Command+Shift+G，打开 ~/.codex/pets，不存在时创建目录。
+   如果已自定义 CODEX_HOME，请打开该目录下的 pets 文件夹，即 $CODEX_HOME/pets。
+3. 将包内角色文件夹复制进去；已有同名文件夹时，请先备份旧版。
+4. 打开 Codex 设置 → 宠物（Pets），刷新并选择角色。
+   若未显示，重新打开设置或重启 Codex。
+
+每个角色目录内必须直接包含 pet.json 和 spritesheet.webp。
+正确示例：pets/sakiko-bandorichan/pet.json
+请勿额外套一层压缩包名称或仓库的 pets 文件夹。
+单人包只包含对应角色，双人包包含两个角色。
+
+每位角色包含 9 种动画状态与 16 个视线方向。
+当前已测试的 Codex 版本使用固定 192 × 208 单元格与像素化缩放，部分比例下边缘可能出现锯齿。
+Windows 屏幕缩放为 150% 时，如当前版本提供宠物尺寸设置，可尝试宽度 128；其他环境请按实际显示效果调整。
+
+本项目是 AI 辅助制作的非官方同人宠物，动画帧并非官方动画逐帧截取。
+角色造型参考《元祖！バンドリちゃん》；角色及原作相关权利归各自权利人所有。
+官方资料：https://anime.bang-dream.com/bandorichan/character/avemujica/
+项目与更新：https://github.com/ayin0914/codex-avemujica-pets
